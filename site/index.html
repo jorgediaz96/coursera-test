@@ -12,15 +12,19 @@
     <header> <cite>idea no es vivir para siempre, es crear algo que sí lo haga</cite>
         <nav>elementos que nos serviran para la navegacion dentro de nuestra pagina</nav>
     </header>
-    <h1> Hola mundo!!!</h1>
+    <section id="seccion2">
+        <h1> Hola mundo!!!</h1>
+    </section>
+
     <h2>Bienvenidos a mi sitio , aprendiendo desarrollo web</h2>
     <h2>En el mostraremos la evolucion de las habilidades requeridas</h2>
 
-    <section>
+    <section id="seccion1">
         <h2>Temas:</h2>
         <article>Elementos de cabecera HTML</article>
         <article>Listas</article>
         <article>Referencias de entidades de caracteres HTML</article>
+        <article>Etiquetas de referencia internas y externas</article>
     </section>
 
     <section>
@@ -62,6 +66,29 @@
                 <h4>Ejemplo:</h4>
                 <p>Jorge Diaz 2021 &copy; copyright, podemos ver el simbolo de registro calificado</p>
     </section>
+
+    <section>
+        <h3>Etiquetas de referencia internas y externas:</h3>
+
+        <p>Este es un enlace de referencia interna</p>
+        <a href="hola.html" title="Referencia">
+            <div>click aqui</div>
+        </a>
+        <p>Ahora ira un enlace de referencia externa</p>
+        <a href="https://www.coursera.org/programs/universidad-distrital-francisco-jose-de-caldas-on-coursera-qytds?currentTab=MY_COURSES" target="_blank" title="Enlace externo">
+            <div>enlace externo</div>
+
+        </a>
+        <p>Podremos observar enlaces a diferetes secciones dentro de nuestra p&aacute;gina</p>
+        <ul>
+            <li><a href="#seccion1">Seccion 1</a></li>
+            <li><a href="#seccion2">Seccion 2</a></li>
+        </ul>
+        <p>Volver arriba
+            <a href="#top">click</a>
+        </p>
+    </section>
+
     <hr>
     <footer>
         Gracias por su visita!!!
