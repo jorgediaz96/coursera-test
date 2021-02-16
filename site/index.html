@@ -39,6 +39,50 @@
             color: darkred;
             background-color: rgb(228, 221, 127);
         }
+        
+        section>h3 {
+            color: crimson;
+            text-align: center;
+        }
+        
+        section.Pseudo li {
+            color: darkgoldenrod;
+            list-style: none;
+            text-align: center;
+        }
+        
+        section li {
+            color: darkgoldenrod;
+        }
+        
+        p.pa {
+            color: darkmagenta;
+        }
+        /* Estados de los vinculos, forma de modificar un enlace */
+        /* Link, visited, hover, active de esta forma aplicar estilos diferentes luego de ser visitados*/
+        
+        .pseudoselector:link,
+        .pseudoselector:visited {
+            text-decoration: none;
+            background-color: darkorange;
+            border: 1px solid red;
+            color: rgb(16, 16, 17);
+            /*display: block;*/
+            width: 200px;
+            text-align: center;
+            margin-bottom: 1px;
+        }
+        
+        .pseudoselector:hover,
+        .pseudoselector:active {
+            background-color: rgb(228, 221, 127);
+            color: saddlebrown;
+        }
+        
+        section.Pseudo li:nth-child(2) {
+            font-size: 24px;
+            font-family: cursive;
+        }
     </style>
 </head>
 
@@ -47,9 +91,7 @@
     <header> <cite>idea no es vivir para siempre, es crear algo que sí lo haga</cite>
         <nav>elementos que nos serviran para la navegacion dentro de nuestra pagina</nav>
     </header>
-    <section id="seccion2">
-        <a href="hola.html" title="Clickkkk">Click aqui melitaaaaa</a>
-    </section>
+
 
     <h2 class="entidades">Bienvenidos a mi sitio , aprendiendo desarrollo web</h2>
     <h2 class="entidades">En el mostraremos la evolucion de las habilidades requeridas</h2>
@@ -60,9 +102,10 @@
         <article>Listas</article>
         <article>Referencias de entidades de caracteres HTML</article>
         <article>Etiquetas de referencia internas y externas</article>
+        <article>Pseudo-class selector</article>
     </section>
 
-    <section class="entidades">
+    <section class="entidades" id="seccion2">
         <h3>Elementos: </h3>
         <div class="azul">En HTML existen seis elementos que pueden ser utilizados para escribir cabeceras o encabezados: "h1", "h2", "h3", "h4", "h5" y "h6".</div>
     </section>
@@ -87,7 +130,7 @@
 
     <section class="entidades">
         <h3>Referencias de entidades de caracteres HTML:</h3>
-        <p>Los caracteres especiales HTML son una serie de códigos que sirven para traducir los diferentes caracteres que se utilizan en los alfabetos humanos para mostrarlos en los navegadores web. Esto es debido que los ordenadores &nbsp;solo&nbsp; utilizan&nbsp;
+        <p class="pa">Los caracteres especiales HTML son una serie de códigos que sirven para traducir los diferentes caracteres que se utilizan en los alfabetos humanos para mostrarlos en los navegadores web. Esto es debido que los ordenadores &nbsp;solo&nbsp; utilizan&nbsp;
             números y no letras o símbolos. La necesidad de traducir los caracteres humanos a lenguaje binario no apareció con la llegada de internet. De hecho, su origen se remonta a los propios inicios de la informática.</p>
 
         <p>Cuando escribimos un texto que va a ser visualizado en una página web, no escribimos solo el texto, sino que le añadimos una serie de fragmentos de código de manera que los navegadores puedan interpretar lo que queremos que se muestre. A continuación,
@@ -130,6 +173,14 @@
         </p>
     </section>
 
+    <section class="Pseudo">
+        <h3>Pseudo-class selector</h3>
+        <ul>
+            <li><a class="pseudoselector" href="https://somosinvictos.com/futbol-mexicano/" target="_blank">Somos invictos</a></li>
+            <li><a class="pseudoselector" href="https://www.365scores.com/es-mx" target="_blank">365 scores</a></li>
+        </ul>
+
+    </section>
     <hr>
     <footer>
         Gracias por su visita!!!
