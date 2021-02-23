@@ -78,3 +78,17 @@ section.Pseudo li:nth-child(2) {
     font-size: 24px;
     font-family: cursive;
 }
+
+.estiloTexto {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: gray;
+    font-style: inherit;
+    font-weight: lighter;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: justify;
+}
+
+.tamañosFuente {
+    font-size: 120%;
+}
